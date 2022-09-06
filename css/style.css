@@ -1,0 +1,171 @@
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    width: 475px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    overflow:hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-top: 80px;
+    text-align: center;
+}
+
+header span {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+input {
+    width: 375px;
+    height: 40px;
+    border-radius: 24px;
+    border: 1px solid var(--pale-blue);
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+input::placeholder {
+    color: var(--pale-blue);
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 24px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(223, 89%, 70%); 
+}
+
+small {
+    margin: 10px 0 0 -20px;
+    color: var(--light-red);
+    font-size: 14px;
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.notify {
+    margin-left: 40px;
+}
+
+.illustration {
+    width: 450px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 15px;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+@media screen and (min-width: 825px) {
+    
+    .container {
+        width: 900px;
+        height: 800px;
+    }
+
+    .notify {
+        display: flex;
+        flex-direction: row;
+    }
+
+    form {
+        position: relative;
+    }
+
+    input {
+        width: 280px;
+        margin-left: -40px;
+    }
+
+    button {
+        width: 150px;
+        height: 45px;
+        margin: 20px 0 0 10px;
+    }
+
+    .illustration {
+        width: 550px;
+    }
+
+    header h1 {
+        margin-top: 50px;
+    }
+
+    .icons {
+        margin-top: 40px;
+    }
+
+    small {
+        position:absolute;
+        margin: 80px 0 0 -20px;
+    }
+}
